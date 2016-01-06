@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MusicManager.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <MusicManagerDelegate>
 
 @end
 
@@ -17,8 +18,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    [MusicManager defaultManager].delegate = self;
+//    [[MusicManager defaultManager] playCountDownSound];
+//    [[MusicManager defaultManager] playBackgroupSound];
+    
     return YES;
 }
+
+//- (void)musicManagerPlayCountDownDidFinish {
+//    [[MusicManager defaultManager] playBackgroupSound];
+//    [self performSelector:@selector(playAirSound) withObject:nil afterDelay:1.0f];
+//}
+//
+//
+//- (void)playAirSound {
+//    [[MusicManager defaultManager] playTapAirSound];
+//    [self performSelector:@selector(playGetSound) withObject:nil afterDelay:2.0f];
+//}
+//
+//- (void)playGetSound {
+//    [[MusicManager defaultManager] playTapGetSound];
+//    [self performSelector:@selector(playAirSound) withObject:nil afterDelay:1.0f];
+//}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

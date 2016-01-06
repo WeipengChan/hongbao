@@ -19,6 +19,10 @@
 		007F01EA1C3BC7F300680C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007F01E81C3BC7F300680C5B /* LaunchScreen.storyboard */; };
 		007F01F51C3BC7F300680C5B /* HongbaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F01F41C3BC7F300680C5B /* HongbaoTests.m */; };
 		007F02001C3BC7F300680C5B /* HongbaoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F01FF1C3BC7F300680C5B /* HongbaoUITests.m */; };
+		D7A73CB11C3D01E600ACD99B /* MusicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A73CB01C3D01E600ACD99B /* MusicManager.m */; };
+		D7A73CB41C3D0C3E00ACD99B /* luckytap_air.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A73CB21C3D0C3E00ACD99B /* luckytap_air.wav */; };
+		D7A73CB51C3D0C3E00ACD99B /* luckytap_get.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A73CB31C3D0C3E00ACD99B /* luckytap_get.wav */; };
+		D7A73CB71C3D0CC800ACD99B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A73CB61C3D0CC800ACD99B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,11 @@
 		007F01FB1C3BC7F300680C5B /* HongbaoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HongbaoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		007F01FF1C3BC7F300680C5B /* HongbaoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HongbaoUITests.m; sourceTree = "<group>"; };
 		007F02011C3BC7F300680C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A73CAF1C3D01E600ACD99B /* MusicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicManager.h; sourceTree = "<group>"; };
+		D7A73CB01C3D01E600ACD99B /* MusicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicManager.m; sourceTree = "<group>"; };
+		D7A73CB21C3D0C3E00ACD99B /* luckytap_air.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = luckytap_air.wav; sourceTree = "<group>"; };
+		D7A73CB31C3D0C3E00ACD99B /* luckytap_get.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = luckytap_get.wav; sourceTree = "<group>"; };
+		D7A73CB61C3D0CC800ACD99B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A73CB71C3D0CC800ACD99B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,7 @@
 		007F01CE1C3BC7F200680C5B = {
 			isa = PBXGroup;
 			children = (
+				D7A73CB61C3D0CC800ACD99B /* AudioToolbox.framework */,
 				007F01D91C3BC7F200680C5B /* Hongbao */,
 				007F01F31C3BC7F300680C5B /* HongbaoTests */,
 				007F01FE1C3BC7F300680C5B /* HongbaoUITests */,
@@ -109,12 +120,16 @@
 		007F01D91C3BC7F200680C5B /* Hongbao */ = {
 			isa = PBXGroup;
 			children = (
+				D7A73CB21C3D0C3E00ACD99B /* luckytap_air.wav */,
+				D7A73CB31C3D0C3E00ACD99B /* luckytap_get.wav */,
 				000A7B7F1C3CFA380087FA28 /* luckytap_air.mp3 */,
 				000A7B801C3CFA380087FA28 /* luckytap_bg.mp3 */,
 				000A7B811C3CFA380087FA28 /* luckytap_countdown.mp3 */,
 				000A7B821C3CFA380087FA28 /* luckytap_get.mp3 */,
 				007F01DD1C3BC7F300680C5B /* AppDelegate.h */,
 				007F01DE1C3BC7F300680C5B /* AppDelegate.m */,
+				D7A73CAF1C3D01E600ACD99B /* MusicManager.h */,
+				D7A73CB01C3D01E600ACD99B /* MusicManager.m */,
 				007F01E01C3BC7F300680C5B /* ViewController.h */,
 				007F01E11C3BC7F300680C5B /* ViewController.m */,
 				007F01E31C3BC7F300680C5B /* Main.storyboard */,
@@ -256,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				007F01EA1C3BC7F300680C5B /* LaunchScreen.storyboard in Resources */,
+				D7A73CB51C3D0C3E00ACD99B /* luckytap_get.wav in Resources */,
 				000A7B861C3CFA380087FA28 /* luckytap_get.mp3 in Resources */,
 				007F01E71C3BC7F300680C5B /* Assets.xcassets in Resources */,
 				000A7B831C3CFA380087FA28 /* luckytap_air.mp3 in Resources */,
+				D7A73CB41C3D0C3E00ACD99B /* luckytap_air.wav in Resources */,
 				000A7B851C3CFA380087FA28 /* luckytap_countdown.mp3 in Resources */,
 				000A7B841C3CFA380087FA28 /* luckytap_bg.mp3 in Resources */,
 				007F01E51C3BC7F300680C5B /* Main.storyboard in Resources */,
@@ -287,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007F01E21C3BC7F300680C5B /* ViewController.m in Sources */,
+				D7A73CB11C3D01E600ACD99B /* MusicManager.m in Sources */,
 				007F01DF1C3BC7F300680C5B /* AppDelegate.m in Sources */,
 				007F01DC1C3BC7F200680C5B /* main.m in Sources */,
 			);
@@ -435,7 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = inHouseddys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "801da8f6-bd11-4f7c-b648-f161a79115d8";
+				PROVISIONING_PROFILE = "efad3aab-1117-4e2b-94ba-8e34cb64be79";
 			};
 			name = Debug;
 		};
@@ -449,7 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = inHouseddys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "801da8f6-bd11-4f7c-b648-f161a79115d8";
+				PROVISIONING_PROFILE = "efad3aab-1117-4e2b-94ba-8e34cb64be79";
 			};
 			name = Release;
 		};
