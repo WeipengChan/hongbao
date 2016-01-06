@@ -15,7 +15,7 @@
     BOOL _isCountDown;
 }
 @end
-
+ 
 static MusicManager *_instance = nil;
 
 @implementation MusicManager
