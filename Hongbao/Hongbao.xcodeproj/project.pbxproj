@@ -11,6 +11,7 @@
 		000A7B841C3CFA380087FA28 /* luckytap_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000A7B801C3CFA380087FA28 /* luckytap_bg.mp3 */; };
 		000A7B851C3CFA380087FA28 /* luckytap_countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000A7B811C3CFA380087FA28 /* luckytap_countdown.mp3 */; };
 		000A7B861C3CFA380087FA28 /* luckytap_get.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000A7B821C3CFA380087FA28 /* luckytap_get.mp3 */; };
+		000A7B8C1C3D386E0087FA28 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A7B8B1C3D386E0087FA28 /* FXLabel.m */; };
 		007F01DC1C3BC7F200680C5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F01DB1C3BC7F200680C5B /* main.m */; };
 		007F01DF1C3BC7F300680C5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F01DE1C3BC7F300680C5B /* AppDelegate.m */; };
 		007F01E21C3BC7F300680C5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F01E11C3BC7F300680C5B /* ViewController.m */; };
@@ -43,6 +44,8 @@
 		000A7B801C3CFA380087FA28 /* luckytap_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = luckytap_bg.mp3; sourceTree = "<group>"; };
 		000A7B811C3CFA380087FA28 /* luckytap_countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = luckytap_countdown.mp3; sourceTree = "<group>"; };
 		000A7B821C3CFA380087FA28 /* luckytap_get.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = luckytap_get.mp3; sourceTree = "<group>"; };
+		000A7B8A1C3D386E0087FA28 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
+		000A7B8B1C3D386E0087FA28 /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
 		007F01D71C3BC7F200680C5B /* Hongbao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hongbao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007F01DB1C3BC7F200680C5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		007F01DD1C3BC7F300680C5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,9 +89,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000A7B891C3D386E0087FA28 /* FXLabel */ = {
+			isa = PBXGroup;
+			children = (
+				000A7B8A1C3D386E0087FA28 /* FXLabel.h */,
+				000A7B8B1C3D386E0087FA28 /* FXLabel.m */,
+			);
+			path = FXLabel;
+			sourceTree = "<group>";
+		};
 		007F01CE1C3BC7F200680C5B = {
 			isa = PBXGroup;
 			children = (
+				000A7B891C3D386E0087FA28 /* FXLabel */,
 				007F01D91C3BC7F200680C5B /* Hongbao */,
 				007F01F31C3BC7F300680C5B /* HongbaoTests */,
 				007F01FE1C3BC7F300680C5B /* HongbaoUITests */,
@@ -288,6 +301,7 @@
 			files = (
 				007F01E21C3BC7F300680C5B /* ViewController.m in Sources */,
 				007F01DF1C3BC7F300680C5B /* AppDelegate.m in Sources */,
+				000A7B8C1C3D386E0087FA28 /* FXLabel.m in Sources */,
 				007F01DC1C3BC7F200680C5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
